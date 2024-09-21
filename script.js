@@ -14,3 +14,33 @@ setTimeout(()=>{
 },3000);
 
 });
+bodyE1.addEventListener("click",(event)=>{
+const xpos = event.offsetX;
+const ypos = event.offsetY;
+const spanE1 = document.createElement("span");
+spanE1.style.left = xpos + "px";
+spanE1.style.top = ypos + "px";
+const size = Math.random ()*100;
+spanE1.style.width = size + "px";
+spanE1.style.height = size + "px";
+bodyE1.appendChild(spanE1);
+setTimeout(()=>{
+    spanE1.remove();
+},3000);
+
+});
+bodyE1.addEventListener("mouseover",(event)=>{
+const xpos = event.offsetX;
+const ypos = event.offsetY;
+const spanE1 = document.createElement("span");
+spanE1.style.left = xpos + "px";
+spanE1.style.top = ypos + "px";
+const size = Math.random ()*100;
+spanE1.style.width = size + "px";
+spanE1.style.height = size + "px";
+bodyE1.appendChild(spanE1);
+setTimeout(()=>{
+    spanE1.remove();
+},3000);
+
+});
